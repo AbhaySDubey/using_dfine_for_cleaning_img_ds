@@ -42,6 +42,13 @@ While I've tried my best to document the code properly, which should allow easil
 3. (Bonus Task):
 
 
+### To run the code:
+1. First of all, download/clone the repo: [Custom D-FINE model](https://github.com/ArgoHA/custom_d_fine)
+
+2. Download/clone this repo. Combine the contents of the 2 repositories, and replace the ```config.yaml``` file from the **Custom D-FINE model** repo with the config.yaml file from this repo.
+
+3. Run the ```main.ipynb``` file.
+
 ---
 
 ## Inference
