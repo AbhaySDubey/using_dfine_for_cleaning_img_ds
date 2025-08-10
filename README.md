@@ -8,7 +8,6 @@ You can find the cleaned dataset at: [Drive Link]()
  
 ### Project Directory Structure
 
----
 ```
 using_dfine_for_cleaning_img_ds/
 ├── temp_cleaned/
@@ -20,6 +19,8 @@ using_dfine_for_cleaning_img_ds/
 ├── .gitignore
 └── config.yaml
 ```
+
+---
 
 ## Process Summary
 
