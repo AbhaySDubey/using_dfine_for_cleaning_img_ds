@@ -9,36 +9,17 @@ You can find the cleaned dataset at: [Drive Link]()
 ### Project Directory Structure
 
 ---
-custom_d_fine/
-├── assets/
-│   ├── bench.png
-│   ├── infer_high.jpg
-│   └── ...
-├── contaminated_classifier_data/
-│   ├── background/
-│   └── football/
-├── custom_pretrained_model/
-│   ├── model.pt
-│   └── config.yaml
-├── demo/
-│   └── demo.py
-├── pretrained/
-│   └── dfine_m_coco.pth
-├── src/
-│   ├── d_fine/
-│   ├── dl/
-│   ├── etl/
-│   └── infer/
-├── cleaned_dataset/
-│   ├── background/
-│   └── football/
+```
+using_dfine_for_cleaning_img_ds/
 ├── temp_cleaned/
 │   ├── background/
 │   └── football/
 ├── main.ipynb
 ├── requirements.txt
 ├── README.md
+├── .gitignore
 └── config.yaml
+```
 
 ## Process Summary
 
@@ -72,8 +53,8 @@ While I've tried my best to document the code properly, which should allow easil
 
 - The incorrectly labelled negative images (containing ball, but labelled as negative) are ```FN: 1286```
 
-#### Hence, we had to remove ```1286``` images from the background folder (and move over to the football folder)
-#### We also had to remove ```189``` images from the football folder (and move over to the background folder)
+#### Hence, I had to remove ```1286``` images from the background folder (and move over to the football folder)
+#### I also had to remove ```189``` images from the football folder (and move over to the background folder)
 
 ---
 
