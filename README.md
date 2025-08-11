@@ -40,6 +40,13 @@ While I've tried my best to document the code properly, which should allow easil
     - The primary idea behind processing the pre-labelled football images was just to ensure that we do end up having any ***False Positives*** in our dataset.
 
 3. (Bonus Task):
+    - I made an 80:20 train-val split on the cleaned dataset.
+
+    - Prepared the data transforms, and data loaders.
+
+    - Trained the ResNet18 model.
+
+    - ***The model can be found at:*** [Drive Link](https://drive.google.com/drive/folders/196dIDvlFYKliXYxabg3UkCYKZNCD7Xmz?usp=sharing)
 
 
 ### To run the code:
@@ -93,7 +100,7 @@ While I've tried my best to document the code properly, which should allow easil
         - this is possibly caused by the low quality of images
 
     - #### there are a few false negatives, too
-        - while relatively smaller, there are a few false negatives, as well, possibly in the range of 1/10 to 1/8 images
+        - there are still quite a few false negatives, as well, possibly in the range of 1/10 to 1/8 images
 
     - ### While I did not try solving this by retraining the model due to time constraints, it does pose some major problems.
 
