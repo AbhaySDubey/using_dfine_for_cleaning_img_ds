@@ -82,7 +82,9 @@ While I've tried my best to document the code properly, which should allow easil
 
     ```pip install tensorrt```
 
-    <!-- 4. And, ***oh my god***, the amount of repeated dependency specifications, specifically because a few dependencies install some packages themselves - *I am however, leaving them as they are for now* -->
+    4. ***Also, to resolve the dependency conflicts, you may use the provided requirements.txt file, which is regenerated as a pipe from running ```pip freeze``` on my ```venv``` setup, using Python 3.11.9, so it should probably be able to avert most dependency conflicts.***
+
+    <!-- 5. And, ***oh my god***, the amount of repeated dependency specifications, specifically because a few dependencies install some packages themselves - *I am however, leaving them as they are for now* -->
 
 - ### Output Quality
 
