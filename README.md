@@ -4,7 +4,7 @@
 
 A project to clean a contaminated dataset for a single class classification task, using the D-FINE object detection model.
 
-You can find the cleaned dataset at: [Drive Link]()
+You can find the cleaned dataset at: [Drive Link](https://drive.google.com/drive/folders/1rBG6AmkxdcRa5dO7DsITFwRJGHIAaaYj?usp=sharing)
  
 ### Project Directory Structure
 
@@ -52,16 +52,18 @@ While I've tried my best to document the code properly, which should allow easil
 ---
 
 ## Inference
+### In the contaminated dataset:
 
-- The correctly labelled positive images (containing ball) are ```TP = 3861```
+- The correctly labelled positive images (containing ball and labelled correctly as ```football```) are ```correct_fb = 3861```
 
-- The correctly labelled  negative images (not containing ball) are ```TN: 3263```
+- The correctly labelled  negative images (not containing ball and correctly labelled ```background```) are ```correct_bg: 3263```
 
-- The incorrectly labelled positive images (not containing ball, but labelled as positive) are ```FP: 189```
+- The incorrectly labelled positive images (not containing ball, but labelled as `football`) are ```incorrect_fb: 189```
 
-- The incorrectly labelled negative images (containing ball, but labelled as negative) are ```FN: 1286```
+- The incorrectly labelled negative images (containing ball, but labelled as background) are ```incorrect_bg: 1286```
 
 #### Hence, I had to remove ```1286``` images from the background folder (and move over to the football folder)
+
 #### I also had to remove ```189``` images from the football folder (and move over to the background folder)
 
 ---
@@ -83,6 +85,7 @@ While I've tried my best to document the code properly, which should allow easil
     <!-- 4. And, ***oh my god***, the amount of repeated dependency specifications, specifically because a few dependencies install some packages themselves - *I am however, leaving them as they are for now* -->
 
 - ### Output Quality
+
     - #### the pre-trained model produces quite a few false positives (detecting footballs where they do not exist)
         - it's worth noting that many of these images do not even contain any round figure that could be mistakenly classified as a ball
         - this is possibly caused by the low quality of images
